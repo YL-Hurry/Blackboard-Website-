@@ -1,0 +1,17 @@
+<div class="search">
+  <div id="searchTitle">
+    <h1>Search Courses</h1>
+  </div>
+
+  <div class="searchForm">
+    <form class="form" (ngSubmit)="onSubmit()">
+      <input class="input" type="text" name="courseName" placeholder="Input class name, class number, professor or subject" [(ngModel)]="input">
+      <input type="submit" value="Search" class="btn">
+    </form>
+  </div>
+</div>
+
+<app-list-course class="list" [courselist]="courseList"></app-list-course>
+
+
+

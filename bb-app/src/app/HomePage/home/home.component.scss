@@ -1,0 +1,60 @@
+
+
+
+.homebackground {
+  height: 950px;
+  background-color: lightgrey;
+  margin-left: -10px;
+  margin-right: -10px;
+  background-image: url(/assets/image/background.jpg);
+  background-size: 100%;
+  // opacity: 0.5;
+}
+
+.homeGrid{
+  div{
+    // border: #333333 solid 1px;
+    margin: 5px;
+    // outline-offset: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  // background-image: url(/assets/image/background.jpg);
+
+  position: relative;
+  top: 10px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-template-columns: repeat(2,2fr); /*1fr 1fr*/
+  grid-gap: 10px;
+  align-content: center;
+  justify-content: center;
+}
+.hg1{
+  grid-column: 1;
+  grid-row: 1;
+  height: 425px;
+  overflow: hidden;
+}
+.hg2{
+  grid-column: 2;
+  grid-row: 1;
+  height: 425px;
+  overflow: hidden;
+}
+.hg3{
+  grid-column: 1;
+  grid-row: 2;
+  height: 425px;
+  overflow: auto;
+}
+
+.hg3::-webkit-scrollbar {display:none}
+
+.hg4{
+  grid-column: 2;
+  grid-row: 2;
+  height: 425px;
+  overflow: hidden;
+}

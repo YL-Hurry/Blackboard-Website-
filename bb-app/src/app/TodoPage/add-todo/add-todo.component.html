@@ -1,0 +1,7 @@
+<app-header></app-header>
+<h1>Campus Moment</h1>
+<form class="form" (ngSubmit)="onSubmit()">
+  <input type="text" name="title" [(ngModel)]="title" placeholder="Add Moment Title">
+  <input type="text" name="content" [(ngModel)]="content[0]" placeholder="Add Moment Content">
+  <input type="submit" value="Submit" class="btn">
+</form>

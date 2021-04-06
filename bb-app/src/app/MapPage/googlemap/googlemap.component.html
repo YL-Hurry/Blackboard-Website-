@@ -1,0 +1,11 @@
+<agm-map
+  (mapDblClick)="mapDoubleClick($event)"
+  [disableDoubleClickZoom] = "true"
+  [latitude]="42.340048" [longitude]="-71.089126"
+  [zoom]="zoom">
+  <agm-info-window></agm-info-window>
+  <agm-marker [latitude]="42.340048" [longitude]="-71.089126" [label]="'NEU'" [style]=""></agm-marker>
+  <agm-marker *ngFor="let locations of locations" [latitude]="locations.lat" [longitude]="locations.lng"></agm-marker>
+</agm-map>
+
+<router-outlet></router-outlet>

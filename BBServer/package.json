@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Mongoose server: mongodb://localhost:27017/blackboard\r http://localhost:8080/",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Qiushi Zhang",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.3.5",
+    "mongoose": "^4.13.3",
+    "nodemon": "^2.0.1",
+    "rxjs": "^6.5.3"
+  }
+}

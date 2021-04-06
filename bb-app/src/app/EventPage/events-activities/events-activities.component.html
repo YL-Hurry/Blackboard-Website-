@@ -1,0 +1,51 @@
+
+
+<div id="container">
+ 
+  <div
+    ng2-carouselamos
+    class="slides-wrapper"
+    [items]="items"
+    [width]="500"    
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item"
+    (onSelectedItem)="selectedItem = $event.item; selectedIndex = $event.index"
+    >
+  </div>
+  
+
+
+<ng-template #prev>
+  <img src='../assets/image/sort-left.png' id="left" >
+</ng-template>
+<ng-template #next>
+  <img src='../assets/image/sort-right.png' id="right" >
+</ng-template>
+<ng-template #item let-item let-i="index" >
+    
+    <div class="items">
+        
+             
+          
+          
+          <a href="{{ item.source }}" target="_blank"><img src="{{ item.name }}" class="image"> </a>     
+    </div>
+<!-- 
+    <div class="items">
+        <img alt="" src="{{ item.name }}" class="image"> 
+        <div class="middle">
+        <a href="{{ item.source }}" target="_blank"></a>     
+          </div>        
+      </div> -->
+
+ 
+
+
+
+
+</ng-template>
+
+</div>
+
+

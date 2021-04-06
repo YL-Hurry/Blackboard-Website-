@@ -1,0 +1,13 @@
+<div class="todosPage">
+  <h2 align="center">Your Favorite Moment</h2>
+  <div *ngFor="let todo of todos">
+    <app-todo-item
+      *ngIf="todo.completed"
+      [todo]="todo"
+      (deleteTodo)="deleteTodo($event)"
+    >
+    </app-todo-item>
+  </div>
+
+</div>
+

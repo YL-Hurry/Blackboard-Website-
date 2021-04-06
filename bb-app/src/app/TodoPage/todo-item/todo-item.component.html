@@ -1,0 +1,33 @@
+<div [ngClass]="setClass()" class="todoitem">
+
+  <p>
+    <button (click)="onToggle(todo)" class="alike">
+      <i class="material-icons" *ngIf="todo.completed">favorite</i>
+      <i class="material-icons" *ngIf="!todo.completed">favorite_border</i>
+    </button>
+    {{todo.alike}}
+
+    <button (click)="showContent()" class="todoTitle"><span>title:</span>{{ todo.title }}
+
+      </button>
+
+    <button (click)="onDelete(todo)"  class="del"><i class="material-icons">
+      delete
+    </i></button>
+
+  </p>
+
+  <form *ngIf="contentFlag" class="content" (ngSubmit)="onSubmit()" >
+    <p *ngFor="let content of todo.content">   {{content}}
+      <button (click)="onDeleteContent(content)"  class="del"><i class="material-icons">
+        delete
+      </i></button>
+    </p>
+    <input type="text" name="content" [(ngModel)]="content" placeholder="Add Moment Content">
+    <input type="submit" value="Submit" class="btn">
+  </form>
+</div>
+
+
+
+

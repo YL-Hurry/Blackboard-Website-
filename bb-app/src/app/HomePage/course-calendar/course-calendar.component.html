@@ -1,0 +1,11 @@
+<h2 align="center">Today's Course</h2>
+<div>
+  <div *ngIf="courses" class="course-calender-item">
+    <div *ngFor="let a of courses"><br>{{a.courseName}}</div>
+  </div>
+  <div *ngIf="courses.length === 0" class="course-calender-item"> <br><br><br> No Course Today! <br> Enjoy your life</div>
+</div>
+
+
+
+

@@ -1,0 +1,36 @@
+<table class="tbl">
+  <tr class="tblHead">
+    <td width="180">Course Number</td>
+    <td width="300">Course Name</td>
+    <td width="225">Professor</td>
+  </tr>
+  <tr>
+    <td width="180">{{ course.courseNumber }}</td>
+    <td width="300">{{ course.courseName }}</td>
+    <td width="225">{{ course.professor }}</td>
+    <td width="150"><button (click)="view(course)"> View Detail </button></td>
+    <td width="90"><button (click)="register()"> Register/Waive </button></td>
+  </tr>
+</table>
+
+
+<p class="detail">
+  {{ number }}
+</p>
+<p class="detail">
+  {{ cName }}
+</p>
+<p class="detail">
+  {{ weekTime }}
+</p>
+<p class="detail">
+  {{ dayTime }}
+</p>
+<p class="detail">
+  {{ professor }}
+</p>
+<p class="detail">
+  {{ detail }}
+</p>
+
+

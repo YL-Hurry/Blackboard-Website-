@@ -1,0 +1,13 @@
+<div class="LoginPage" id="LoginPage">
+  <h1 style="color: white">Welcome to BlackBoard</h1>
+      <nav *ngIf="!auth.isLoggedIn()" class="login">
+        <a class="gologin" routerLink="/login">Login</a>|<a class="goregister" routerLink="/register">Register</a>
+      </nav>
+      <nav *ngIf="auth.isLoggedIn()" class="profile&logout">
+        <a class="goprofile"
+           routerLink="/profile/{{auth.getUserDetails()?.email}}">{{ auth.getUserDetails()?.first_name }}</a>|<a class="gologout"
+                                                                                                   routerLink="" (click)="auth.logout()">Logout</a>
+      </nav>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,28 @@
+.calenderTitle{
+border: solid 2px ;
+padding: 5px;
+margin: 5px;
+}
+
+td{
+    background-color: transparent;
+    border:solid 3px rgba(207, 206, 206, 0.2);
+    width: auto;
+    height:5px;
+}
+.table.table-bordered.table-hover{
+
+    margin: 10px auto;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+
+    max-width: 100%;
+    white-space: nowrap;
+
+
+}
+

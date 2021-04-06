@@ -1,0 +1,23 @@
+.header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: -35px;
+  margin-top: -20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 60px;
+  z-index: 2;
+  height: 25px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "American Typewriter";
+}
+
+
